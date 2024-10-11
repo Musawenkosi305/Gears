@@ -1,0 +1,18 @@
+<mat-toolbar class="max-w-7x1 max-auto border-x justify-between">
+    <a routerLink="products">Gears</a>
+    <button mat-icon-buttin [matMenuTriggerFor]="menu">
+        <mat-icon [matBadge]="1" matBadgeColor="warn">shopping_cart</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <div class="p-3 divide-y divide-solid">
+            <div class="pb-3 flex justify-between">
+            <span class="mr-16">1 item</span>
+            <a routerLink="cart">View cart</a>
+            </div>
+            <div class="flex justify-between font-light mb-2">
+                keyboard x 1
+                <span class="font-bold">{{ '30' | currency }}</span>
+            </div>
+        </div>
+    </mat-menu>
+</mat-toolbar>
