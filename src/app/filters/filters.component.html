@@ -1,0 +1,20 @@
+<div class="sidenav">
+    <div class="logo-container">
+        <a mat-button>
+            <i class="fal fa-bars"></i>
+        </a>
+        <a mat-button class="btn-close">
+            <i id="fal" class="fal fa-times close-icon"></i>
+        </a>
+    </div>
+    <mat-expansion-panel *ngIf="categories">
+        <mat-expansion-panel-header>
+            <mat-panel-title> CATEGORIES </mat-panel-title>
+        </mat-expansion-panel-header>
+    <mat-selection-list [multiple]="false">
+        <mat-list-option *ngFor="let category of categories" [value]="category">
+            <div class="logo-text"><a mat-button>{{category}}</a></div>
+        </mat-list-option>
+    </mat-selection-list>
+    </mat-expansion-panel>
+</div>

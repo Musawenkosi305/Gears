@@ -18,22 +18,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { FiltersComponent } from './filters/filters.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInPageComponent,
     RegisterPageComponent,
-    HomePageComponent,
     NavBarComponent,
     ProductsComponent,
-    FooterComponent
+    FooterComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
