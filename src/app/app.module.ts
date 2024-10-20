@@ -24,6 +24,9 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { FiltersComponent } from './filters/filters.component';
+import { ProductBoxComponent } from './product-box/product-box.component';
+import { ProductHeaderComponent } from './product-header/product-header.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { FiltersComponent } from './filters/filters.component';
     NavBarComponent,
     ProductsComponent,
     FooterComponent,
-    FiltersComponent
+    FiltersComponent,
+    ProductBoxComponent,
+    ProductHeaderComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

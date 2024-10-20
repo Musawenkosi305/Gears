@@ -1,0 +1,23 @@
+<mat-card class="text-center">
+    <div>
+        <img class="mb-1 mx-auto h-[200px]"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzu8Bk22kfKAQA56mpA6JOdXXrutjKVRzDA&s">
+        <div class="w-full"
+        [ngClass]="{'px-8 flex flex-col justify-between':fullwidthMode}">
+            <div>
+                <h5>Handle Bars</h5>
+                <p class="truncate
+                hover:whitespace-normal">20" Handle bars</p>
+                <p>Description</p>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-red-400">{{ '15000' | currency }}</span>
+                <button>
+                    <mat-icon class="text-gray-500">
+                        shopping_cart
+                    </mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</mat-card>
