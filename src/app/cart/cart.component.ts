@@ -6,14 +6,7 @@ import {Cart, CartItem } from 'src/app/models/cart.model';
   templateUrl: './cart.component.html',
 })
 export class CartComponent implements OnInit {
-  cart: Cart = { items: [{
-    product: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzu8Bk22kfKAQA56mpA6JOdXXrutjKVRzDA&s',
-    name: '20" Handles',
-    price: 15000,
-    quantity: 1,
-    id: 1,
-
-  }] };
+  cart: Cart = { items: []};
 
   dataSource: Array<CartItem> = [];
   displayedColumns: Array<string> = [

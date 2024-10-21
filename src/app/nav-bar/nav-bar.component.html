@@ -1,11 +1,11 @@
 <mat-toolbar
 class="max-w-7x1 mx-auto border-x justify-between">
-<a routerLink="products">GEARS</a>
+<a routerLink="/products">GEARS</a>
 <div class="spacer"></div>
 <div class="bar">
-    <a mat-button routerLink="products">Home</a>
-    <a mat-button routerLink="signInPage">SignUp</a>
-    <a mat-button routerLink="registerPage">Register</a>
+    <a mat-button routerLink="/products">Home</a>
+    <a mat-button routerLink="/signInPage">Register</a>
+    <a mat-button routerLink="/registerPage">SignIn</a>
     
 </div>
 <button mat-icon-button [mat-menu-trigger-for]="menu"><mat-icon [matBadge]="3">shopping_cart</mat-icon></button>
@@ -13,7 +13,7 @@ class="max-w-7x1 mx-auto border-x justify-between">
     <div class="p-3 divide-y divide-solid">
         <div class="pb-3 flex justify-between">
             <span class="mr-16">3 Items</span>
-            <a routerLink="cart">View Cart</a>
+            <a mat-button routerLink="/cart">View Cart</a>
         </div>
         <div class="py-3">
             <div class="flex justify-between font-light mb-2">
